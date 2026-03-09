@@ -1,0 +1,16 @@
+[versions]
+kotlin = "2.3.10"
+quarkus-platform = "3.31.2"
+quarkus-plugin = "3.31.2"
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+
+quarkus = { id = "io.quarkus", version.ref = "quarkus-plugin" }
+
+[libraries]
+quarkus-bom = { group = "io.quarkus.platform", name = "quarkus-bom", version.ref = "quarkus-platform" }
+
+quarkus-core = { group = "io.quarkus", name = "quarkus-core" }
+quarkus-arc = { group = "io.quarkus", name = "quarkus-arc" }
+quarkus-rest-jackson = { group = "io.quarkus", name = "quarkus-rest-jackson" }
